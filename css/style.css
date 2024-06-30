@@ -1,113 +1,97 @@
-/* Genel stil ayarlamaları */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
-
-body {
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    overflow-x: hidden;
-    line-height: 1.6;
-    background-color: #f2f2f2;
+    overflow-x:hidden
+    
 }
 
-h1, h2, h3, p {
+h1,h2,h3,p{
     margin: 0;
 }
-
-h1 {
-    font-size: 48px; /* Masaüstü için */
+h1{
+    font-size: 65px;
+    margin-bottom: 26px;
 }
-
-p {
+p{
     font-size: 18px;
     text-align: justify;
 }
-
-.container {
-    max-width: 1200px; /* Masaüstü için */
+.container{
+    max-width: 1440px;
     margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-.header {
+.header{
     background-image: url("../image/donation13.jpg");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.00005);
     color: white;
     margin-bottom: 120px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.header h1 {
-    font-size: 48px; /* Mobil için */
-    margin-bottom: 20px;
-}
-
-.link-btn {
+.link-btn{
     text-decoration: none;
-    cursor: pointer;
+    cursor:pointer;
     font-size: 22px;
     background-color: #FF5959;
     color: white;
-    padding: 16px 24px;
+    padding: 16px 12px;
     border-radius: 5px;
-    line-height: normal;
-    transition: background-color 0.3s ease;
+    line-height: 70px;
+    overflow-y: hidden;
 }
-
-.link-btn:hover {
+.link-btn:hover{
     background-color: #2F52D9;
+    overflow-y: hidden;
 }
-
-.donate {
-    color: #000;
-    padding-top: 10%;
-}
-
-.donate-2 {
+.donate{
     text-align: center;
-    margin-bottom: 50px;
+    color: #000;
+    padding-top: 23%;
 }
 
-.donate-2 h2 {
-    font-size: 36px; /* Mobil için */
-    margin-bottom: 20px;
+
+.donate-2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+h2{
+    font-size: 45px;
+    margin-bottom: 30px;
 }
 
-.cards {
+.cards{
     display: flex;
-    flex-wrap: wrap;
+    margin:50px 0;
     justify-content: center;
-    margin: 50px 0;
+    
 }
 
-.card-items {
-    flex: 0 0 calc(50% - 20px);
+.card-items p{
+    font-size: 30px;
+}
+
+.card-items{
     padding: 35px 15px;
     border: 1px solid black;
     margin-right: 30px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
-.card-items:hover {
+.card-items:hover{
     background-color: #FFEEEE;
     color: #FF5959;
     border: 1px solid #FF5959;
 }
 
-.amount {
+.amount{
     display: block;
     width: 80%;
-    max-width: 400px;
     margin: auto;
     padding: 15px 0;
     border-radius: 10px;
@@ -116,84 +100,77 @@ p {
     font-size: 22px;
     margin-bottom: 30px;
 }
-
-.donate-3 {
-    margin-bottom: 50px;
+.donate-3{
+    margin-bottom: 120px;
 }
-
-.plan-cards {
+.plan-cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.plan-card-items {
-    flex: 0 0 calc(33.33% - 20px);
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 50px 30px;
+.plan-card-items{
+    width: 80%;
+    margin-right: 7%;
     border: 1px solid black;
+    padding: 50px 30px;
     border-radius: 10px;
 }
-
-.plan-card-items img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+h3{
+    font-size: 24px;
+    margin: 20px 0;
 }
 
-.tagP {
+.tagP{
     margin-bottom: 40px;
     color: #000;
     text-align: center;
 }
 
-#one {
+#one{
     background: rgba(79, 157, 166, 0.1);
 }
 
-#two {
+#two{
     background: rgba(255, 89, 89, 0.1);
 }
 
-#three {
+#three{
     background: #FFF4D6;
 }
 
-.lives {
+.lives{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 100px;   
+}
+.live-items{
+    width: 80%;
+   margin-right: 10%;
+   align-self: center;
 }
 
-.live-items {
-    flex: 0 0 calc(50% - 20px);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.live-items img {
-    max-width: 100%;
-    height: auto;
+.live-items img{
     border-radius: 20px;
+    width: 100%;
 }
 
-.update {
+.live-items p{
+    margin-bottom: 15px;
+}
+
+.update{
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
-.subscribe {
+.subscribe{
     background-color: #FFF4D6;
     padding: 50px 150px;
     margin-top: 40px;
     border-radius: 10px;
 }
 
-.form input {
+.form input{
     margin-bottom: 15px;
     padding: 15px 0;
     width: 250px;
@@ -202,117 +179,110 @@ p {
     background-color: #F3F3F3;
     font-size: 20px;
 }
-
-.email {
+.email{
     padding: 15px 0;
+    
     border-radius: 10px;
     background-color: #F3F3F3;
     font-size: 20px;
 }
 
-.btn {
+.btn{
     margin-left: -10px;
     padding: 15px 35px;
+    overflow-y: hidden;
 }
 
-.volunteer {
+.volunteer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
-
-.volunteer-item {
-    flex: 0 0 calc(50% - 20px);
-    margin-bottom: 20px;
-}
-
-.volunteer-item img {
+.volunteer-item img{
     width: 100%;
     height: 300px;
     border-radius: 350px;
 }
-
-.vol {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+.volunteer-item{
+    width: 100%;
+    margin-right: 5%;
 }
 
-footer {
+.vol{
+    text-align: center;
+}
+
+footer{
     background-color: #0B0D17;
     padding: 20px 0;
     color: white;
     text-align: center;
 }
 
-.htag {
+.htag{
     color: #FF5959;
     font-family: 'Lobster', cursive;
     font-weight: 700;
     font-style: italic;
 }
-
-footer p {
+footer p{
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 36px; /* Mobil için */
-    }
+#hw-btn {
+    color:#fff!important;
+    text-decoration:none!important
+    overflow-y: hidden;
+}
+
+.sc-btn-wrapper {
+    position:relative;
+    margin:60px 0 -30px
+    overflow-y: hidden;
+}
     
-    .container {
-        padding: 10px;
-    }
+.sc-btn {
+    display:flex;
+    cursor:pointer;
+    height:80px;
+    width:300px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    margin:0 auto;
+    text-transform:uppercase;
+    font-size:2em;
+    font-weight:900;
+    color:#000;
+    background:#8400ff;
+    color:#fff;
+    border:2px solid #eee;
+    border-radius:12px;
+    box-shadow:0 0 6px 0 rgb(0 0 0 / 30%)
+    overflow-y: hidden;
+}
     
-    .header {
-        height: 50vh; /* Mobil için */
-        padding-top: 50px;
-    }
+.sc-btn:active {
+    transform:scale(0.95)
+    overflow-y: hidden;
+}
+
+.dcsfpw-lb {
+    display:block;
+    background:#eee;
+    position:relative;
+    z-index:5;
+    overflow:hidden;
+    border-radius:5px;
+    margin-top:30px
+}
     
-    .header h1 {
-        font-size: 36px; /* Mobil için */
-        margin-bottom: 10px;
-    }
-    
-    .link-btn {
-        padding: 12px 20px;
-        font-size: 18px;
-    }
-    
-    .donate {
-        padding-top: 20%;
-    }
-    
-    .donate-2 h2 {
-        font-size: 28px; /* Mobil için */
-        margin-bottom: 20px;
-    }
-    
-    .card-items {
-        flex: 0 0 100%;
-    }
-    
-    .amount {
-        width: 100%;
-    }
-    
-    .plan-card-items {
-        flex: 0 0 calc(50% - 20px);
-    }
-    
-    .live-items {
-        flex: 0 0 100%;
-    }
-    
-    .volunteer-item {
-        flex: 0 0 100%;
-    }
-    
-    .vol {
-        font-size: 20px; /* Mobil için */
-    }
+.dcsfpw-lb div {
+    font-size:12px;
+    text-indent:9999px;
+    overflow:hidden;
+    background:#8400ff;
+    background-image:linear-gradient(to right top,#8400ff,#8e17ff,#9825ff,#a130ff,#a93aff)
 }
 
 @media (max-width: 768px) {
