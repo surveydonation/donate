@@ -314,3 +314,67 @@ footer p {
         font-size: 20px; /* Mobil için */
     }
 }
+
+@media (max-width: 768px) {
+    /* Mobil cihazlar için ayarlamalar */
+
+    body {
+        font-size: 16px; /* Varsayılan font büyüklüğü */
+    }
+
+    h1 {
+        font-size: 36px; /* Mobil için h1 font büyüklüğü */
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 10px; /* Container padding ayarı */
+    }
+
+    .header {
+        height: 50vh; /* Header yükseklik ayarı */
+        padding-top: 50px; /* Header içerik yükleme ayarı */
+    }
+
+    .header h1 {
+        font-size: 36px; /* Başlık boyut ayarı */
+    }
+
+    .link-btn {
+        padding: 12px 20px; /* Button boyut ayarı */
+        font-size: 18px; /* Font ayarları */
+    }
+
+    .donate {
+        padding-top: 20%; /* Padding ayarları */
+    }
+
+    .donate-2 h2 {
+        font-size: 28px; /* Başlık ayarları */
+        margin-bottom: 20px; /* Boşluk ayarları */
+    }
+
+    .card-items {
+        flex: 0 0 100%; /* Kart ayarları */
+    }
+
+    .amount {
+        width: 100%; /* Miktar ayarları */
+    }
+
+    .plan-card-items {
+        flex: 0 0 calc(50% - 20px); /* Plan ayarları */
+    }
+
+    .live-items {
+        flex: 0 0 100%; /* Canlı öğeler */
+    }
+
+    .volunteer-item {
+        flex: 0 0 100%; /* Gönüllü ayarları */
+    }
+
+    .vol {
+        font-size: 20px; /* Yazı ayarları */
+    }
+}
